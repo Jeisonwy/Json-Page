@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <div className="flex-1">
           <Routes>
-            <Route path="/" element={<MainPage />} />
+            <Route path="/Json-Page" element={<MainPage />} />
             <Route path="/academico" element={<Academico />} />
             <Route path="/profesional" element={<Profesional />} />
             <Route path="/proyectos" element={<Proyectos />} />

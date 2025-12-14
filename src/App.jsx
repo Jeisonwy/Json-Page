@@ -1,0 +1,29 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import MainPage from "./components/MainPage";
+import Academico from "./components/Academico";
+import Tecnologías from "./components/tecnologias";
+import Profesional from "./components/Profesional";
+import Proyectos from "./components/Proyectos";
+import Contacto from "./components/Contacto";
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="bg-gray-950 text-white min-h-screen w-full flex flex-col">
+        <Navbar />
+        <div className="flex-1">
+          <Routes>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/academico" element={<Academico />} />
+            <Route path="/profesional" element={<Profesional />} />
+            <Route path="/proyectos" element={<Proyectos />} />
+            <Route path="/contacto" element={<Contacto />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;

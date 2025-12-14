@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import MainPage from "./components/MainPage";
-import Academico from "./components/Academico";
-import Tecnologías from "./components/tecnologias";
-import Profesional from "./components/Profesional";
-import Proyectos from "./components/Proyectos";
-import Contacto from "./components/Contacto";
+import navbar from "./components/navbar";
+import mainPage from "./components/mainPage";
+import academico from "./components/academico";
+import tecnologías from "./components/tecnologias";
+import profesional from "./components/profesional";
+import proyectos from "./components/proyectos";
+import contacto from "./components/contacto";
 function App() {
   return (
     <BrowserRouter>
@@ -14,11 +14,11 @@ function App() {
         <Navbar />
         <div className="flex-1">
           <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/academico" element={<Academico />} />
-            <Route path="/profesional" element={<Profesional />} />
-            <Route path="/proyectos" element={<Proyectos />} />
-            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/" element={<mainPage />} />
+            <Route path="/academico" element={<academico />} />
+            <Route path="/profesional" element={<profesional />} />
+            <Route path="/proyectos" element={<proyectos />} />
+            <Route path="/contacto" element={<contacto />} />
           </Routes>
         </div>
       </div>

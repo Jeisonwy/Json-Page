@@ -39,7 +39,7 @@ const contactos = [
   ,
 ];
 
-export default function Contacto() {
+export default function contacto() {
   return (
     <div className="bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

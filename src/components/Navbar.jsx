@@ -50,7 +50,7 @@ export default function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <img
               alt="Your Company"
-              src="../public/favicon.png"
+              src="https://i.postimg.cc/SKWYcDXN/lgo.png"
               className="h-8 w-auto"
             />
 

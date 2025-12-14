@@ -49,7 +49,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <img
-              alt="Your Company"
+              alt="Company"
               src="https://i.postimg.cc/SKWYcDXN/lgo.png"
               className="h-8 w-auto"
             />

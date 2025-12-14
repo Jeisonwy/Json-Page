@@ -23,7 +23,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function navbar() {
+export default function Navbar() {
   const location = useLocation();
 
   return (

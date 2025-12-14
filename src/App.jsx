@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="bg-gray-950 text-white min-h-screen w-full flex flex-col">
-        <Navbar />
+        <navbar />
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<mainPage />} />

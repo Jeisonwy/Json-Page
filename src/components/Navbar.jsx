@@ -12,7 +12,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Inicio", href: "/" },
+  { name: "Inicio", href: "/Json-Page" },
   { name: "Académico", href: "/academico" },
   { name: "Profesional", href: "/profesional" },
   { name: "Proyectos", href: "/proyectos" },

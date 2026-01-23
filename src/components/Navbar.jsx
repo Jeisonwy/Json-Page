@@ -13,7 +13,7 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Inicio", href: "/Json-Page" },
-  { name: "Académico", href: "/academico" },
+  { name: "Academico", href: "/academico" },
   { name: "Profesional", href: "/profesional" },
   { name: "Proyectos", href: "/proyectos" },
   { name: "Contacto", href: "/contacto" },
@@ -29,12 +29,12 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="relative bg-gray-800/50 after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
+      className="relative z-40 bg-gray-900/60 backdrop-blur-md shadow-[0_12px_30px_rgba(0,0,0,0.35)] after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-white/10"
     >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 transition duration-200 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
               <Bars3Icon
                 aria-hidden="true"
                 className="block size-6 group-data-open:hidden"
@@ -51,7 +51,7 @@ export default function Navbar() {
             <img
               alt="Company"
               src="https://i.postimg.cc/SKWYcDXN/lgo.png"
-              className="h-8 w-auto"
+              className="h-8 w-auto opacity-90 transition duration-300 hover:opacity-100"
             />
 
             {/* Desktop nav */}
@@ -65,10 +65,10 @@ export default function Navbar() {
                       key={item.name}
                       to={item.href}
                       className={classNames(
+                        "relative rounded-md px-3 py-2 text-sm font-medium transition duration-300 after:pointer-events-none after:absolute after:inset-x-2 after:-bottom-1 after:h-px after:origin-left after:scale-x-0 after:bg-gradient-to-r after:from-indigo-400 after:to-cyan-300 after:transition-transform after:duration-300 hover:after:scale-x-100",
                         isActive
-                          ? "bg-gray-950/50 text-white"
-                          : "text-gray-300 hover:bg-white/5 hover:text-white",
-                        "rounded-md px-3 py-2 text-sm font-medium"
+                          ? "bg-white/10 text-white shadow-inner after:scale-x-100"
+                          : "text-gray-300/80 hover:bg-white/5 hover:text-white",
                       )}
                     >
                       {item.name}
@@ -83,7 +83,7 @@ export default function Navbar() {
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <button
               type="button"
-              className="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500"
+              className="relative rounded-full p-1 text-gray-400 transition duration-200 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500"
             >
               <span className="sr-only">View notifications</span>
               <BellIcon aria-hidden="true" className="size-6" />
@@ -91,7 +91,7 @@ export default function Navbar() {
 
             {/* User menu 2 */}
             <Menu as="div" className="relative ml-3">
-              <MenuButton className="relative flex rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+              <MenuButton className="relative flex rounded-full transition duration-200 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
                 <img
                   alt=""
                   src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
@@ -99,19 +99,19 @@ export default function Navbar() {
                 />
               </MenuButton>
 
-              <MenuItems className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-gray-800 py-1 outline -outline-offset-1 outline-white/10">
+              <MenuItems className="absolute right-0 z-50 mt-2 w-48 origin-top-right rounded-md bg-gray-900/95 py-1 shadow-xl ring-1 ring-white/10 outline -outline-offset-1 outline-white/10">
                 <MenuItem>
-                  <button className="block w-full px-4 py-2 text-left text-sm text-gray-300 hover:bg-white/5">
+                  <button className="block w-full px-4 py-2 text-left text-sm text-gray-300 transition hover:bg-white/5">
                     Perfil
                   </button>
                 </MenuItem>
                 <MenuItem>
-                  <button className="block w-full px-4 py-2 text-left text-sm text-gray-300 hover:bg-white/5">
+                  <button className="block w-full px-4 py-2 text-left text-sm text-gray-300 transition hover:bg-white/5">
                     Configuración
                   </button>
                 </MenuItem>
                 <MenuItem>
-                  <button className="block w-full px-4 py-2 text-left text-sm text-gray-300 hover:bg-white/5">
+                  <button className="block w-full px-4 py-2 text-left text-sm text-gray-300 transition hover:bg-white/5">
                     Cerrar sesión
                   </button>
                 </MenuItem>
@@ -133,10 +133,10 @@ export default function Navbar() {
                 as={Link}
                 to={item.href}
                 className={classNames(
+                  "block rounded-md px-3 py-2 text-base font-medium transition duration-200",
                   isActive
-                    ? "bg-gray-950/50 text-white"
+                    ? "bg-white/10 text-white"
                     : "text-gray-300 hover:bg-white/5 hover:text-white",
-                  "block rounded-md px-3 py-2 text-base font-medium"
                 )}
               >
                 {item.name}

@@ -9,7 +9,7 @@ const posts = [
     datetime: "2020-03-16",
     category: { title: "Ingenieria", href: "#" },
     author: {
-      name: "Google Appsheet, Appscript",
+      name: "Google Appsheet, Appscript, Saltcorn",
       role: "Herramientas de bajo código",
       href: "#",
       imageUrl:
@@ -29,8 +29,7 @@ const posts = [
       name: "Looker Studio, Domo BI",
       role: "Herramientas de visualización de datos",
       href: "#",
-      imageUrl:
-        "https://play-lh.googleusercontent.com/7m6tWuvazdJQBoMtz4-UuHvl46APqRczwLQ0-Bq7QULjSGcgnljFpCswdvZkc4VTpw=w240-h480-rw",
+      imageUrl: "https://www.svgrepo.com/show/354012/looker-icon.svg",
     },
   },
   {
@@ -47,28 +46,31 @@ const posts = [
       role: "Herramientas de gestión de proyectos",
       href: "#",
       imageUrl:
-        "https://play-lh.googleusercontent.com/_AZCbg39DTuk8k3DiPRASr9EwyW058pOfzvAu1DsfN9ygtbOlbuucmXaHJi5ooYbokQX",
+        "https://cdn.iconscout.com/icon/free/png-256/free-jira-logo-icon-svg-download-png-3030001.png",
     },
   },
 ];
 
 export default function Profesional() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-slate-950 py-24 sm:py-32">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80rem_40rem_at_top,rgba(34,197,94,0.14),transparent_70%)]" />
+      <div className="pointer-events-none absolute -bottom-24 right-[-10%] -z-10 h-80 w-80 rounded-full bg-emerald-400/10 blur-3xl" />
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-            Mas de 3 años
+            4 Años
           </h2>
-          <p className="mt-2 text-lg/8 text-gray-300">
-            y 10 meses de experiencia profesional como:
+          <p className="mt-2 text-lg/8 text-gray-300/90">
+            de experiencia profesional como:
           </p>
         </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 border-t border-white/10 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}
-              className="flex max-w-xl flex-col items-start justify-between"
+              className="group flex h-full flex-col items-start justify-between rounded-2xl border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-300/40 hover:bg-white/10 hover:shadow-2xl"
             >
               <div className="flex items-center gap-x-4 text-xs">
                 <time dateTime={post.datetime} className="text-gray-400">
@@ -76,27 +78,27 @@ export default function Profesional() {
                 </time>
                 <a
                   href={post.category.href}
-                  className="relative z-10 rounded-full bg-gray-800/60 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-800"
+                  className="relative z-10 rounded-full bg-white/10 px-3 py-1.5 font-medium text-gray-200 transition hover:bg-white/20"
                 >
                   {post.category.title}
                 </a>
               </div>
               <div className="group relative grow">
-                <h3 className="mt-3 text-lg/6 font-semibold text-white group-hover:text-gray-300">
+                <h3 className="mt-4 text-lg/6 font-semibold text-white transition group-hover:text-emerald-100">
                   <a href={post.href}>
                     <span className="absolute inset-0" />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 line-clamp-3 text-sm/6 text-gray-400">
+                <p className="mt-5 line-clamp-3 text-sm/6 text-gray-300/80">
                   {post.description}
                 </p>
               </div>
-              <div className="relative mt-8 flex items-center gap-x-4 justify-self-end">
+              <div className="relative mt-8 flex items-center gap-x-4">
                 <img
                   alt=""
                   src={post.author.imageUrl}
-                  className="size-10 rounded-full bg-gray-800"
+                  className="size-10 rounded-full bg-gray-800/80 transition duration-300 group-hover:scale-105"
                 />
                 <div className="text-sm/6">
                   <p className="font-semibold text-white">

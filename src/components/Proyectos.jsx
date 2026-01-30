@@ -24,6 +24,26 @@ const features = [
       },
     ],
   },
+
+  {
+    name: "POS App Bussiness Solution PRO",
+    description:
+      "Sistema de punto de venta para restaurantes implementado con Google Appscript + Google sheets + Tailwind CSS.",
+    icon: LockClosedIcon,
+    actions: [
+      {
+        label: "Documentación",
+        url: "https://docs.google.com/document/d/1cSu6sSPB3hZSynDBwhGIQj-AOedaQh5AAiY51dP90q8/edit?usp=sharing",
+        type: "repo",
+      },
+      {
+        label: "Ver Demo",
+        url: "https://script.google.com/macros/s/AKfycbw0JtD5XVg3A-oXG3VoWy-kfv8D34O0cdJqNHkjsaPk0JDEFy-GRLc9MqBGJQrrYY6H3A/exec",
+        type: "demo",
+      },
+    ],
+  },
+
   {
     name: "Flowlytics Solutions",
     description:
@@ -42,6 +62,7 @@ const features = [
       },
     ],
   },
+
   {
     name: "Portal de pagos con API de MercadoPago",
     description:

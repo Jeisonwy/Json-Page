@@ -28,7 +28,7 @@ const features = [
   {
     name: "POS App Bussiness Solution PRO",
     description:
-      "Sistema de punto de venta para restaurantes implementado con Google Appscript + Google sheets + Tailwind CSS.",
+      "Sistema de punto de venta para restaurantes implementado con Google Appscript + Google sheets + Tailwind CSS. (requieres cuenta Google y aceptar permisos NO SE RECOPILA NINGUNA INFORMACION DEL VISITANTE).",
     icon: LockClosedIcon,
     actions: [
       {

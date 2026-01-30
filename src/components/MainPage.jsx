@@ -18,7 +18,7 @@ const features = [
     icon: LockClosedIcon,
   },
   {
-    name: "Gestión y lideazgo de proyectos.",
+    name: "Gestión y liderazgo de proyectos.",
     description:
       "Experiencia en la coordinación y gestión de equipos de trabajo para asegurar la entrega exitosa de proyectos tecnológicos.",
     icon: ServerIcon,
@@ -38,14 +38,15 @@ export default function MainPage() {
               <h2 className="text-base/7 font-semibold uppercase tracking-[0.2em] text-indigo-300">
                 Jeison Garzon
               </h2>
-              <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-                Ingeniero de Software Desarrollador Full Stack
-              </p>
+              <h1 className="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl">
+                Ingeniero de Software Full Stack en Colombia
+              </h1>
+
               <p className="mt-6 text-lg/8 text-gray-300/90">
                 Ingeniero de software con experiencia profesional en desarrollo
-                e implementacion de proyectos de alto impacto. Apasionado por la
-                tecnologia y el aprendizaje continuo, siempre en busca de nuevos
-                retos para crecer y contribuir al exito de los proyectos.
+                e implementación de proyectos de alto impacto. Apasionado por la
+                tecnología y el aprendizaje continuo, siempre en busca de nuevos
+                retos para crecer y contribuir al éxito de los proyectos.
               </p>
               <dl className="mt-10 max-w-xl space-y-6 text-base/7 text-gray-300 lg:max-w-none">
                 {features.map((feature) => (

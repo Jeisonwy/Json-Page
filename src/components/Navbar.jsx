@@ -81,24 +81,8 @@ export default function Navbar() {
 
           {/* Right-side icons */}
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button
-              type="button"
-              className="relative rounded-full p-1 text-gray-400 transition duration-200 hover:text-white focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500"
-            >
-              <span className="sr-only">View notifications</span>
-              <BellIcon aria-hidden="true" className="size-6" />
-            </button>
-
             {/* User menu 2 */}
             <Menu as="div" className="relative ml-3">
-              <MenuButton className="relative flex rounded-full transition duration-200 hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
-                <img
-                  alt=""
-                  src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_640.png"
-                  className="size-8 rounded-full bg-gray-800 outline -outline-offset-1 outline-white/10"
-                />
-              </MenuButton>
-
               <MenuItems className="absolute right-0 z-50 mt-2 w-48 origin-top-right rounded-md bg-gray-900/95 py-1 shadow-xl ring-1 ring-white/10 outline -outline-offset-1 outline-white/10">
                 <MenuItem>
                   <button className="block w-full px-4 py-2 text-left text-sm text-gray-300 transition hover:bg-white/5">

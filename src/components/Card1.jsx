@@ -3,9 +3,9 @@ import { useState } from "react";
 export default function Card1() {
   return (
     <div className="max-w-md mx-auto p-6 bg-gray-900 rounded-xl shadow-lg border border-white/10 mt-6">
-      <h1 className="text-2xl font-bold text-white mb-6">
+      <h2 className="text-2xl font-bold text-white mb-6">
         Contadores que se actualizan separadamente
-      </h1>
+      </h2>
 
       <div className="flex flex-col gap-4">
         <MyButton />

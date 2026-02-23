@@ -32,7 +32,7 @@ const people = [
 
 export default function Academico() {
   return (
-    <div className="relative isolate overflow-hidden bg-slate-950 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(70rem_40rem_at_top,rgba(59,130,246,0.18),transparent_70%)]" />
       <div className="pointer-events-none absolute -top-16 right-[-10%] -z-10 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
 

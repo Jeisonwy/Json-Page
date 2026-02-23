@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import InteractiveGlow from "./components/InteractiveGlow";
 
 import Navbar from "./components/Navbar";
 import MainPage from "./components/MainPage";
 import Academico from "./components/Academico";
-import Tecnologias from "./components/Tecnologias";
 import Profesional from "./components/Profesional";
 import Proyectos from "./components/Proyectos";
 import Contacto from "./components/Contacto";
@@ -27,10 +27,14 @@ function AnimatedRoutes() {
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-gray-950 text-white min-h-screen w-full flex flex-col">
-        <Navbar />
-        <div className="flex-1">
-          <AnimatedRoutes />
+      <div className="relative min-h-screen bg-slate-950 text-white">
+        <InteractiveGlow intensity={0.085} size={780} tint="blue" />
+
+        <div className="relative z-10 min-h-screen flex flex-col">
+          <Navbar />
+          <div className="flex-1">
+            <AnimatedRoutes />
+          </div>
         </div>
       </div>
     </BrowserRouter>

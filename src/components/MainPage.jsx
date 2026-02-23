@@ -6,29 +6,29 @@ import {
 
 const features = [
   {
-    name: "Implementador de soluciones tecnológicas.",
+    name: "Arquitectura e implementación de soluciones digitales.",
     description:
-      "Desde la concepción y planteamiento de requerimientos hasta la implementación y despliegue de soluciones tecnológicas efectivas.",
+      "Desde el levantamiento estratégico de requerimientos hasta el diseño e implementación de arquitecturas funcionales escalables alineadas a objetivos de negocio.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "Optimización de procesos y análisis de datos.",
+    name: "Optimización de procesos basada en datos.",
     description:
-      "Desde el levantamiento de información siempre en busca de obtener datos relevantes para la optimización de procesos y toma de decisiones.",
+      "Transformo información operativa en insights estratégicos mediante modelado de datos y visualización orientada a KPIs, impulsando decisiones informadas y mejora continua.",
     icon: LockClosedIcon,
   },
   {
-    name: "Gestión y liderazgo de proyectos.",
+    name: "Liderazgo técnico y coordinación estratégica.",
     description:
-      "Experiencia en la coordinación y gestión de equipos de trabajo para asegurar la entrega exitosa de proyectos tecnológicos.",
+      "Experiencia guiando iniciativas tecnológicas, alineando equipos multidisciplinarios con objetivos organizacionales para garantizar impacto, calidad y cumplimiento.",
     icon: ServerIcon,
   },
 ];
 
 export default function MainPage() {
   return (
-    <div className="relative isolate overflow-hidden bg-slate-950 py-24 sm:py-32">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80rem_40rem_at_top,rgba(56,189,248,0.16),transparent_70%)]" />
+    <div className="relative isolate overflow-hidden py-24 sm:py-32">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80rem_40rem_at_top,rgba(56,189,248,0.16),transparent_90%)]" />
       <div className="pointer-events-none absolute -bottom-24 left-[-10%] -z-10 h-80 w-80 rounded-full bg-indigo-500/10 blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -36,17 +36,18 @@ export default function MainPage() {
           <div className="lg:pt-4 lg:pr-8">
             <div className="lg:max-w-lg">
               <h2 className="text-base/7 font-semibold uppercase tracking-[0.2em] text-indigo-300">
-                Jeison Garzon
+                Jeison Garzon Lara
               </h2>
               <h1 className="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl">
-                Ingeniero de Software Full Stack en Colombia
+                Technical Solutions Engineer enfocado en optimización de
+                procesos y arquitectura de soluciones digitales
               </h1>
 
               <p className="mt-6 text-lg/8 text-gray-300/90">
-                Ingeniero de software con experiencia profesional en desarrollo
-                e implementación de proyectos de alto impacto. Apasionado por la
-                tecnología y el aprendizaje continuo, siempre en busca de nuevos
-                retos para crecer y contribuir al éxito de los proyectos.
+                Diseño e implemento soluciones tecnológicas que traducen
+                necesidades de negocio en sistemas funcionales y escalables.
+                Combino criterio técnico, análisis de datos y visión estratégica
+                para generar impacto medible en entornos organizacionales.
               </p>
               <dl className="mt-10 max-w-xl space-y-6 text-base/7 text-gray-300 lg:max-w-none">
                 {features.map((feature) => (

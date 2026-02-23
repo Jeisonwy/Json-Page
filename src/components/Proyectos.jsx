@@ -7,6 +7,20 @@ import {
 
 const features = [
   {
+    name: "TeSoluciona3D",
+    description:
+      "Pagina Web de compañia de impresión 3D, Con react y tienda virtual Sencilla",
+    icon: CloudArrowUpIcon,
+    actions: [
+      {
+        label: "Ver Demo",
+        url: "https://jeisonwy.github.io/TeSoluciona3D/",
+        type: "demo",
+      },
+    ],
+  },
+
+  {
     name: "Flowlytics HR",
     description:
       "Registro y control de empleados, con Flask, React y MySQL, con Integración continua y despliegue automatizado. Docker y Jenkins.",
@@ -92,7 +106,7 @@ const features = [
 
 export default function Proyectos() {
   return (
-    <div className="relative isolate overflow-hidden bg-slate-950 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(80rem_40rem_at_top,rgba(99,102,241,0.18),transparent_70%)]" />
       <div className="pointer-events-none absolute -top-24 right-[-10%] -z-10 h-80 w-80 rounded-full bg-indigo-500/10 blur-3xl" />
 
@@ -127,7 +141,6 @@ export default function Proyectos() {
                   {feature.description}
                 </dd>
 
-                {/* Botones dinÃ¡micos por proyecto */}
                 {feature.actions?.length ? (
                   <div className="mt-5 flex flex-wrap gap-3">
                     {feature.actions.map((action) => (

@@ -39,7 +39,7 @@ const contactos = [
 
 export default function Contacto() {
   return (
-    <div className="relative isolate overflow-hidden bg-slate-950 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(75rem_40rem_at_top,rgba(99,102,241,0.16),transparent_70%)]" />
       <div className="pointer-events-none absolute -top-24 left-[-10%] -z-10 h-80 w-80 rounded-full bg-indigo-500/10 blur-3xl" />
 

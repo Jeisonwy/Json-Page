@@ -7,6 +7,7 @@ import Academico from "./components/Academico";
 import Profesional from "./components/Profesional";
 import Proyectos from "./components/Proyectos";
 import Contacto from "./components/Contacto";
+import Tecnologias from "./components/Tecnologias";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -18,6 +19,7 @@ function AnimatedRoutes() {
         <Route path="/academico" element={<Academico />} />
         <Route path="/profesional" element={<Profesional />} />
         <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/tecnologias" element={<Tecnologias />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </div>

@@ -16,6 +16,7 @@ const navigation = [
   { name: "Academico", href: "/academico" },
   { name: "Profesional", href: "/profesional" },
   { name: "Proyectos", href: "/proyectos" },
+  { name: "Tecnologías", href: "/tecnologias" },
   { name: "Contacto", href: "/contacto" },
 ];
 

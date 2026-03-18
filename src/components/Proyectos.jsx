@@ -13,8 +13,8 @@ const features = [
     icon: CloudArrowUpIcon,
     actions: [
       {
-        label: "Ver Demo",
-        url: "https://jeisonwy.github.io/TeSoluciona3D/",
+        label: "Ir a la página",
+        url: "https://www.tesoluciona3d.com/",
         type: "demo",
       },
     ],

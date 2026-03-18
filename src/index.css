@@ -4,26 +4,62 @@
   color-scheme: dark;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #020617; /* slate-950 */
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* slate-800 */
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8; /* sky-400 */
+}
+
+/* Page Transitions */
 @keyframes page-enter {
   from {
     opacity: 0;
-    transform: translateY(12px);
-    filter: blur(6px);
+    transform: translateY(15px) scale(0.98);
+    filter: blur(8px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
     filter: blur(0);
   }
 }
 
 .page-transition {
-  animation: page-enter 480ms ease-out;
+  animation: page-enter 600ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
   will-change: opacity, transform, filter;
 }
 
+/* Tech Grid Background */
+.bg-grid-white {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Floating animation for glowing orbs */
+@keyframes float {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+  100% { transform: translateY(0px) scale(1); }
+}
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+.animate-float-delayed {
+  animation: float 8s ease-in-out infinite 4s;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .page-transition {
+  .page-transition, .animate-float, .animate-float-delayed {
     animation: none;
   }
 }

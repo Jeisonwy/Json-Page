@@ -816,9 +816,6 @@ export default function MainPage() {
                   marginTop: "2rem",
                 }}
               >
-                <a href="#experiencia" className="btn-primary">
-                  &gt; VER_EXPERIENCIA
-                </a>
                 <a
                   href="https://www.linkedin.com/in/jsonlara/"
                   target="_blank"

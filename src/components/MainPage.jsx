@@ -60,7 +60,12 @@ function CircuitBackground() {
     >
       <defs>
         <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-          <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#00f5ff" strokeWidth="0.4" />
+          <path
+            d="M 60 0 L 0 0 0 60"
+            fill="none"
+            stroke="#00f5ff"
+            strokeWidth="0.4"
+          />
         </pattern>
 
         {/* Animated dash for circuit traces */}
@@ -97,29 +102,129 @@ function CircuitBackground() {
       <rect width="100%" height="100%" fill="url(#grid)" />
 
       {/* ── Horizontal traces ── */}
-      <line className="th"  x1="0"   y1="120" x2="200" y2="120" stroke="#00f5ff" strokeWidth="1.2" />
-      <line className="th2" x1="0"   y1="300" x2="180" y2="300" stroke="#39ff14" strokeWidth="1.2" />
-      <line className="th3" x1="80%"  y1="80"  x2="100%" y2="80" stroke="#7c3aed" strokeWidth="1.2" />
-      <line className="th"  x1="60%" y1="450" x2="100%" y2="450" stroke="#00f5ff" strokeWidth="1.2" />
-      <line className="th2" x1="0"   y1="550" x2="250" y2="550" stroke="#ec4899" strokeWidth="1.2" />
-      <line className="th3" x1="40%" y1="650" x2="90%" y2="650" stroke="#39ff14" strokeWidth="1.2" />
+      <line
+        className="th"
+        x1="0"
+        y1="120"
+        x2="200"
+        y2="120"
+        stroke="#00f5ff"
+        strokeWidth="1.2"
+      />
+      <line
+        className="th2"
+        x1="0"
+        y1="300"
+        x2="180"
+        y2="300"
+        stroke="#39ff14"
+        strokeWidth="1.2"
+      />
+      <line
+        className="th3"
+        x1="80%"
+        y1="80"
+        x2="100%"
+        y2="80"
+        stroke="#7c3aed"
+        strokeWidth="1.2"
+      />
+      <line
+        className="th"
+        x1="60%"
+        y1="450"
+        x2="100%"
+        y2="450"
+        stroke="#00f5ff"
+        strokeWidth="1.2"
+      />
+      <line
+        className="th2"
+        x1="0"
+        y1="550"
+        x2="250"
+        y2="550"
+        stroke="#ec4899"
+        strokeWidth="1.2"
+      />
+      <line
+        className="th3"
+        x1="40%"
+        y1="650"
+        x2="90%"
+        y2="650"
+        stroke="#39ff14"
+        strokeWidth="1.2"
+      />
 
       {/* ── Vertical traces ── */}
-      <line className="tv"  x1="120" y1="0"   x2="120" y2="300" stroke="#00f5ff" strokeWidth="1.2" />
-      <line className="tv2" x1="300" y1="100" x2="300" y2="500" stroke="#7c3aed" strokeWidth="1.2" />
-      <line className="tv3" x1="80%" y1="0"   x2="80%" y2="200" stroke="#39ff14" strokeWidth="1.2" />
-      <line className="tv"  x1="60%" y1="300" x2="60%" y2="700" stroke="#ec4899" strokeWidth="1.2" />
-      <line className="tv2" x1="45%" y1="0"   x2="45%" y2="150" stroke="#f97316" strokeWidth="1.2" />
+      <line
+        className="tv"
+        x1="120"
+        y1="0"
+        x2="120"
+        y2="300"
+        stroke="#00f5ff"
+        strokeWidth="1.2"
+      />
+      <line
+        className="tv2"
+        x1="300"
+        y1="100"
+        x2="300"
+        y2="500"
+        stroke="#7c3aed"
+        strokeWidth="1.2"
+      />
+      <line
+        className="tv3"
+        x1="80%"
+        y1="0"
+        x2="80%"
+        y2="200"
+        stroke="#39ff14"
+        strokeWidth="1.2"
+      />
+      <line
+        className="tv"
+        x1="60%"
+        y1="300"
+        x2="60%"
+        y2="700"
+        stroke="#ec4899"
+        strokeWidth="1.2"
+      />
+      <line
+        className="tv2"
+        x1="45%"
+        y1="0"
+        x2="45%"
+        y2="150"
+        stroke="#f97316"
+        strokeWidth="1.2"
+      />
 
       {/* ── L-shaped corners ── */}
-      <path d="M 180 300 L 300 300 L 300 180" className="th" fill="none" stroke="#00f5ff" strokeWidth="1.2" />
-      <path d="M 60% 80 L 60% 180 L 80% 180" className="tv2" fill="none" stroke="#7c3aed" strokeWidth="1.2" />
+      <path
+        d="M 180 300 L 300 300 L 300 180"
+        className="th"
+        fill="none"
+        stroke="#00f5ff"
+        strokeWidth="1.2"
+      />
+      <path
+        d="M 60% 80 L 60% 180 L 80% 180"
+        className="tv2"
+        fill="none"
+        stroke="#7c3aed"
+        strokeWidth="1.2"
+      />
 
       {/* ── Nodes (junction dots) ── */}
-      <circle className="nd"  cx="120" cy="120" r="3" fill="#00f5ff" />
+      <circle className="nd" cx="120" cy="120" r="3" fill="#00f5ff" />
       <circle className="nd2" cx="300" cy="300" r="3" fill="#7c3aed" />
       <circle className="nd3" cx="180" cy="300" r="3" fill="#00f5ff" />
-      <circle className="nd"  cx="300" cy="180" r="3" fill="#39ff14" />
+      <circle className="nd" cx="300" cy="180" r="3" fill="#39ff14" />
       <circle className="nd2" cx="120" cy="300" r="3" fill="#ec4899" />
       <circle className="nd3" cx="120" cy="550" r="3" fill="#f97316" />
     </svg>
@@ -222,7 +327,7 @@ function FeatureCard({ feature, index, isLast }) {
       `}</style>
 
       <div
-        className={`card-glitch ${isLast ? "col-span-2 lg:col-span-1" : ""}`}
+        className="card-glitch"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
@@ -235,7 +340,9 @@ function FeatureCard({ feature, index, isLast }) {
           backgroundSize: "300% 300%",
           animation: hovered ? "border-flow 2s linear infinite" : "none",
           transition: "transform 0.35s cubic-bezier(.22,.68,0,1.2)",
-          transform: hovered ? "translateY(-8px) scale(1.02)" : "translateY(0) scale(1)",
+          transform: hovered
+            ? "translateY(-8px) scale(1.02)"
+            : "translateY(0) scale(1)",
           cursor: "default",
         }}
       >
@@ -487,7 +594,8 @@ export default function MainPage() {
           justifyContent: "center",
           padding: "5rem 0",
           overflow: "hidden",
-          background: "radial-gradient(ellipse 80% 60% at 20% 30%, #001a2e 0%, #020617 60%, #05030f 100%)",
+          background:
+            "radial-gradient(ellipse 80% 60% at 20% 30%, #001a2e 0%, #020617 60%, #05030f 100%)",
           fontFamily: "'Exo 2', sans-serif",
         }}
       >
@@ -505,7 +613,8 @@ export default function MainPage() {
             width: "50vw",
             height: "50vw",
             borderRadius: "50%",
-            background: "radial-gradient(circle, #00f5ff18 0%, transparent 70%)",
+            background:
+              "radial-gradient(circle, #00f5ff18 0%, transparent 70%)",
             animation: "hue-rotate 20s linear infinite",
             pointerEvents: "none",
             zIndex: 0,
@@ -519,19 +628,34 @@ export default function MainPage() {
             width: "45vw",
             height: "45vw",
             borderRadius: "50%",
-            background: "radial-gradient(circle, #7c3aed18 0%, transparent 70%)",
+            background:
+              "radial-gradient(circle, #7c3aed18 0%, transparent 70%)",
             pointerEvents: "none",
             zIndex: 0,
           }}
         />
 
         {/* Particles */}
-        <div style={{ position: "absolute", inset: 0, zIndex: 1, pointerEvents: "none" }}>
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            zIndex: 1,
+            pointerEvents: "none",
+          }}
+        >
           <Particles />
         </div>
 
         {/* Scan line */}
-        <div style={{ position: "absolute", inset: 0, zIndex: 2, pointerEvents: "none" }}>
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            zIndex: 2,
+            pointerEvents: "none",
+          }}
+        >
           <ScanLine />
         </div>
 
@@ -549,7 +673,8 @@ export default function MainPage() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 480px), 1fr))",
+              gridTemplateColumns:
+                "repeat(auto-fit, minmax(min(100%, 480px), 1fr))",
               gap: "4rem",
               alignItems: "center",
             }}
@@ -645,7 +770,13 @@ export default function MainPage() {
                     marginBottom: "1rem",
                   }}
                 >
-                  <p style={{ color: "#94a3b8", fontSize: "1rem", lineHeight: 1.7 }}>
+                  <p
+                    style={{
+                      color: "#94a3b8",
+                      fontSize: "1rem",
+                      lineHeight: 1.7,
+                    }}
+                  >
                     Optimización de procesos y{" "}
                     <span
                       style={{
@@ -667,14 +798,23 @@ export default function MainPage() {
                     maxWidth: "520px",
                   }}
                 >
-                  Diseño e implemento soluciones tecnológicas que traducen necesidades de negocio en sistemas funcionales y escalables. Combino criterio técnico, análisis de datos y visión estratégica para generar impacto medible en entornos organizacionales.
+                  Diseño e implemento soluciones tecnológicas que traducen
+                  necesidades de negocio en sistemas funcionales y escalables.
+                  Combino criterio técnico, análisis de datos y visión
+                  estratégica para generar impacto medible en entornos
+                  organizacionales.
                 </p>
               </div>
 
               {/* CTAs */}
               <div
                 className="fade-up-5"
-                style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginTop: "2rem" }}
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "1rem",
+                  marginTop: "2rem",
+                }}
               >
                 <a href="#experiencia" className="btn-primary">
                   &gt; VER_EXPERIENCIA
@@ -690,10 +830,7 @@ export default function MainPage() {
               </div>
 
               {/* Console log decoration */}
-              <div
-                className="fade-up-5"
-                style={{ marginTop: "2rem" }}
-              >
+              <div className="fade-up-5" style={{ marginTop: "2rem" }}>
                 <div
                   style={{
                     fontFamily: "'Share Tech Mono', monospace",
@@ -703,7 +840,9 @@ export default function MainPage() {
                   }}
                 >
                   <span style={{ color: "#39ff1455" }}>// stack loaded: </span>
-                  <span style={{ color: "#00f5ff33" }}>cloud · bi · scrum · distributed · apis</span>
+                  <span style={{ color: "#00f5ff33" }}>
+                    cloud · bi · scrum · distributed · apis
+                  </span>
                 </div>
               </div>
             </div>
@@ -720,7 +859,8 @@ export default function MainPage() {
                   width: "200px",
                   height: "200px",
                   borderRadius: "50%",
-                  background: "radial-gradient(circle, #00f5ff14, transparent 70%)",
+                  background:
+                    "radial-gradient(circle, #00f5ff14, transparent 70%)",
                   pointerEvents: "none",
                 }}
               />
@@ -742,7 +882,7 @@ export default function MainPage() {
               <div
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
                   gap: "0.875rem",
                 }}
               >
